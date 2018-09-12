@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 13</title>
+</head>
+<body>
+<div >Di chuột vào chữ Học css để xem kết quả</div>
+<div id="series" onmouseover="show()">Học CSS</div>
+<script type="text/javascript">
+    function show(){
+        alert('Bạn vừa rê chuột vào')
+    }
+</script>
+<div id="jav" >Học javascript</div>
+<script type="text/javascript">
+    //chọn thẻ có id = jav
+    var element = document.getElementById('jav');
+    //Thêm sự kiện
+    element.onmouseover = function (){
+        alert('Bạn vừa di chuột vào');
+    };
+</script>
+
+<div >Di chuột vào chữ Học javascript để xem kết quả</div>
+<ul>
+    <li class="list">Li 1</li>
+    <li class="list">Li 2</li>
+    <li class="list">Li 3</li>
+    <li class="list">Li 4</li>
+    <li class="list">Li 5</li>
+    <li class="list">Li 6</li>
+    <li class="list">Li 7</li>
+</ul>
+<script type="text/javascript">
+    //chọn thẻ có class = list
+    var element = document.getElementsByClassName('list');
+    //Thêm sự kiện
+    for(i=0; i<element.length; i++){
+        var j = i;
+        element[i].onclick = function (){
+            alert('Bạn vừa click vào thẻ ' + this.innerText);
+        };
+    }
+</script>
+
+</body>
+</html>

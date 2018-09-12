@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 11</title>
+</head>
+<body>
+<div id="hello" data-id='javascript'>  Chào mừng các bạn đến với <a href="http://.com">website học lập trình online</a> </div>
+<div class="toidicode">TOIDICODE.COM
+</div>
+
+<script type="text/javascript">
+    //tạo ra data-id cho thẻ có id = hello
+    document.getElementById('hello').setAttribute('data-id','5');
+    //lấy nội dung data-id của thẻ có id = hello
+    var content = document.getElementById('hello').getAttribute('data-id');
+    //in ra thông nội dung lấy được.
+    alert(content);
+</script>
+</body>
+</html>

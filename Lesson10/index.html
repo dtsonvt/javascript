@@ -5,16 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Lesson 10</title>
 
-    <script type="application/javascript">
-        var  elemnt = document.getElementsByTagName('div');
-        for(var i = 0;i< elemnt.length;i++)
-        {
-            console(elemnt[i].innerHTML);
-        }
-    </script>
 </head>
 <body>
-<div class="hello">Chào mừng các bạn đến với website học lập trình online</div>
+<div class="hello">Chào mừng các bạn đến với website học lập trình online1</div>
 <div class="toidicode">TOIDICODE.COM</div>
+<div class="hello">Chào mừng các bạn đến với website học lập trình online2</div>
+<div class="toidicode">TOIDICODE.COM</div>
+<div id="hello">Chào mừng các bạn đến với website học lập trình online </div>
+<div class="toidicode">TOIDICODE.COM
+    <p class="toidicodes">Bacsic to advance</p>
+</div>
+<script type="application/javascript">
+    //var  element = document.getElementsByTagName('div');
+    //var element = document.getElementsByClassName('hello');
+    //var element = document.getElementsByClassName('toidicode');
+    //var element = document.getElementsByClassName('toidicode');
+    //var element1 = element[0].getElementsByClassName('toidicodes');
+    //Lấy ra nội dung của thẻ đầu tiên
+    var element = document.querySelectorAll('div.hello');
+    //lấy ra nội dung của thẻ.
+    var content = element[0].innerText;
+
+    document.getElementById('hello').innerHTML = 'Học javascript cơ bản';
+    alert(content);
+</script>
 </body>
 </html>

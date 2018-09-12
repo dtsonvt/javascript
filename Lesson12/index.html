@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 12</title>
+</head>
+
+<body>
+<div>Các series học lập trình tại toidicode.com</div>
+<ul>
+    <li class="list">Học HTML</li>
+    <li id="series" style="background: azure;">Học CSS</li>
+    <li class="list">Học javascript</li>
+    <li class="series">Học jquery</li>
+</ul>
+<script type="text/javascript">
+    //tìm đến thẻ HTML có id = series và css
+    document.getElementById('series').style.color = 'red';
+    //tìm đến thẻ HTML có id = series và lấy thông số của thuộc tính background
+    var value = document.getElementById('series').style.background;
+    //hiển thị ra giá trị
+    alert(value);
+</script>
+</body>
+</html>
