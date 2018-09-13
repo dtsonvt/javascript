@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>Click vào chữ '<em>click</em>' để xem kết quả</div>
+<p id="container"> Click</p>
+<script type="text/javascript">
+    var element = document.getElementById('container');
+    element.addEventListener('click', function() {
+        alert('Bạn vừa click');
+    })
+</script>
+
+<div>Kéo dãn của sổ trình duyệt để xem kết quả</div>
+<p id="container"> Click</p>
+<script type="text/javascript">
+    window.addEventListener('resize', getResize);
+    function getResize()
+    {
+        alert('Bạn vừa thay đổi kích cỡ màn hình');
+    }
+</script>
+<div>Kéo dãn của sổ trình duyệt để xem kết quả</div>
+<p id="container"> Click</p>
+<script type="text/javascript">
+    window.addEventListener("mousedown", getResize);
+    function getResize()
+    {
+        alert('Bạn vừa thay đổi kích cỡ màn hình');
+    }
+</script>
+</body>
+</html>

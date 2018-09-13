@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Các đối tượng windows trong javascript</title>
+</head>
+<body>
+<div>Click vào button để xem kết quả</div>
+<button type="button" onclick="openW()">Mở cửa sổ</button>
+<script type="text/javascript">
+    function openW() {
+        window.open('http://toidicode.com', 'toidicode', 'width=500,height=600');
+    }
+</script>
+
+<p>
+    Example 2
+</p>
+
+<div>Click vào button để xem kết quả</div>
+<button type="button" onclick="openW()">Mở cửa sổ</button>
+<button type="button" onclick="closeW()">Đóng cửa sổ</button>
+<button type="button" onclick="resizeW()">Resize cửa sổ</button>
+<button type="button" onclick="moveW()">move cửa sổ</button>
+<script type="text/javascript">
+    function openW() {
+        toidicode = window.open('', '', 'width=300,height=200');
+    }
+
+    function closeW() {
+        toidicode.close();
+    }
+    function moveW() {
+        toidicode.moveTo(200,400);
+        toidicode.focus();
+    }
+    function resizeW() {
+        toidicode.resizeTo(500,700);
+        toidicode.focus();
+    }
+</script>
+</body>
+</html>

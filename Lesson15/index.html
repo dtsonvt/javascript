@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>các thuộc tính thường dùng trong Dom</title>
+</head>
+<body>
+<p>click vào <em>get</em> để xem kết quả</p>
+<a name="toidicode">Toidicode</a><br>
+<a name="facebook">facebook</a><br>
+<button onclick="getA()" >GET</button>
+<p id='result'></p>
+<script type="text/javascript">
+    function getA()
+    {
+        //
+        var length = document.anchors.length;
+        document.getElementById('result').innerText = length;
+    }
+</script>
+<p>Ví dụ 2</p>
+
+<img src ="http://toidicode.com/upload/images/logo.png" width="145" height="126" alt="toidicode" usemap ="#planetmap">
+
+<map name="planetmap">
+    <area shape="rect" coords="0,0,82,126" href="http://toidicode.com" alt="toidicode">
+    <area shape="circle" coords="90,58,3" href="http://toidicode.com" alt="toidicode">
+    <area shape="circle" coords="124,58,8" href="http://toidicode.com" alt="toidicode">
+</map>
+
+<p>
+    <a href="http://toidicode.com/tu-hoc-html-7">HTML</a><br>
+    <a href="http://toidicode.com/tu-hoc-css-8">CSS</a>
+</p>
+
+<p>Click vào GET để xem kết quả</p>
+
+<button onclick="myFunction()">GET</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var x = document.links.length;
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>
+
+</body>
+</html>
